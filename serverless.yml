@@ -25,6 +25,12 @@ functions:
       - httpApi:
           path: /world
           method: get
+  sushi:
+    handler: bin/sushi
+    events:
+      - httpApi:
+          path: /sushi
+          method: get
 
 plugins:
   - serverless-offline
